@@ -1,0 +1,95 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container {
+    width: 325px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.first,
+.second,
+.third {
+    padding: 50px;
+}
+
+.first {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.second {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.third {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+
+    background-color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    width: 65%;
+    padding: 10px;
+    border: 2px solid;
+
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.first button {
+    color: hsl(31, 77%, 52%);
+}
+
+.second button {
+    color: hsl(184, 100%, 22%);
+}
+
+.third button {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        display: flex;
+        width: 70%;
+    }
+
+    button {
+        margin-top: 60px;
+    }
+
+    .first {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .third {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 5px;
+    }
+}
